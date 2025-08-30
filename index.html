@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mason Learns - Educational Fun!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <!-- Animated Background Elements -->
+      <div class="background-decorations">
+        <div class="cloud cloud-1">☁️</div>
+        <div class="cloud cloud-2">☁️</div>
+        <div class="cloud cloud-3">☁️</div>
+        <div class="sun">☀️</div>
+        <div class="rainbow">🌈</div>
+        <div class="floating-star star-1">⭐</div>
+        <div class="floating-star star-2">✨</div>
+        <div class="floating-star star-3">🌟</div>
+      </div>
+
+      <!-- Home Screen -->
+      <div id="home-screen" class="screen active">
+        <div class="header">
+          <div class="mason-avatar">
+            <div class="avatar-ring">
+              <div class="avatar-image">👦</div>
+            </div>
+            <div class="avatar-name">Mason</div>
+          </div>
+          <h1 class="app-title">🎉 Mason Learns! 🎉</h1>
+          <div class="stars-display">
+            <span class="star-count">⭐ <span id="total-stars">0</span></span>
+          </div>
+        </div>
+
+        <div class="navigation-grid">
+          <button class="nav-button shapes-btn" data-section="shapes">
+            <div class="button-glow"></div>
+            <div class="nav-icon">🔷</div>
+            <div class="nav-text">Shapes</div>
+            <div class="button-sparkle">✨</div>
+          </button>
+
+          <button class="nav-button colors-btn" data-section="colors">
+            <div class="button-glow"></div>
+            <div class="nav-icon">🌈</div>
+            <div class="nav-text">Colors</div>
+            <div class="button-sparkle">✨</div>
+          </button>
+
+          <button class="nav-button numbers-btn" data-section="numbers">
+            <div class="button-glow"></div>
+            <div class="nav-icon">🔢</div>
+            <div class="nav-text">Numbers</div>
+            <div class="button-sparkle">✨</div>
+          </button>
+
+          <button class="nav-button alphabet-btn" data-section="alphabet">
+            <div class="button-glow"></div>
+            <div class="nav-icon">🔤</div>
+            <div class="nav-text">Alphabet</div>
+            <div class="button-sparkle">✨</div>
+          </button>
+        </div>
+      </div>
+
+      <!-- Shapes Screen -->
+      <div id="shapes-screen" class="screen">
+        <div class="screen-header">
+          <button class="back-button">← Home</button>
+          <h2>Learn Shapes!</h2>
+          <div class="section-stars">
+            ⭐ <span class="section-star-count">0</span>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="learning-item shape-item" data-shape="circle">
+            <div class="shape circle"></div>
+            <div class="item-label">Circle</div>
+          </div>
+
+          <div class="learning-item shape-item" data-shape="square">
+            <div class="shape square"></div>
+            <div class="item-label">Square</div>
+          </div>
+
+          <div class="learning-item shape-item" data-shape="triangle">
+            <div class="shape triangle"></div>
+            <div class="item-label">Triangle</div>
+          </div>
+
+          <div class="learning-item shape-item" data-shape="rectangle">
+            <div class="shape rectangle"></div>
+            <div class="item-label">Rectangle</div>
+          </div>
+
+          <div class="learning-item shape-item" data-shape="star">
+            <div class="shape star">⭐</div>
+            <div class="item-label">Star</div>
+          </div>
+
+          <div class="learning-item shape-item" data-shape="heart">
+            <div class="shape heart">❤️</div>
+            <div class="item-label">Heart</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colors Screen -->
+      <div id="colors-screen" class="screen">
+        <div class="screen-header">
+          <button class="back-button">← Home</button>
+          <h2>Learn Colors!</h2>
+          <div class="section-stars">
+            ⭐ <span class="section-star-count">0</span>
+          </div>
+        </div>
+
+        <div class="content-grid">
+          <div class="learning-item color-item" data-color="red">
+            <div class="color-block red"></div>
+            <div class="item-label">Red</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="blue">
+            <div class="color-block blue"></div>
+            <div class="item-label">Blue</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="green">
+            <div class="color-block green"></div>
+            <div class="item-label">Green</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="yellow">
+            <div class="color-block yellow"></div>
+            <div class="item-label">Yellow</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="purple">
+            <div class="color-block purple"></div>
+            <div class="item-label">Purple</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="orange">
+            <div class="color-block orange"></div>
+            <div class="item-label">Orange</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="pink">
+            <div class="color-block pink"></div>
+            <div class="item-label">Pink</div>
+          </div>
+
+          <div class="learning-item color-item" data-color="brown">
+            <div class="color-block brown"></div>
+            <div class="item-label">Brown</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Numbers Screen -->
+      <div id="numbers-screen" class="screen">
+        <div class="screen-header">
+          <button class="back-button">← Home</button>
+          <h2>Learn Numbers!</h2>
+          <div class="section-stars">
+            ⭐ <span class="section-star-count">0</span>
+          </div>
+        </div>
+
+        <div class="content-grid numbers-grid" id="numbers-grid">
+          <!-- Numbers 1-20 will be generated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Alphabet Screen -->
+      <div id="alphabet-screen" class="screen">
+        <div class="screen-header">
+          <button class="back-button">← Home</button>
+          <h2>Learn Letters!</h2>
+          <div class="section-stars">
+            ⭐ <span class="section-star-count">0</span>
+          </div>
+        </div>
+
+        <div class="content-grid alphabet-grid" id="alphabet-grid">
+          <!-- Letters A-Z will be generated by JavaScript -->
+        </div>
+      </div>
+
+      <!-- Feedback Elements -->
+      <div id="feedback-text" class="feedback-text"></div>
+      <div id="confetti-container" class="confetti-container"></div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <footer class="license-footer">
+      <p>
+        &copy; 2025 Natasha Smith. Licensed under the
+        <a href="LICENSE" target="_blank">MIT License</a>.
+      </p>
+    </footer>
+  </body>
+</html>
